@@ -1,4 +1,4 @@
-<h1>Listing puns</h1>
+<h1>puns</h1>
 
 <table>
   <tr>
@@ -9,7 +9,7 @@
     <th></th>
   </tr>
 
-<% @puns.each do |pun| %>
+<!-- <% @puns.each do |pun| %>
   <tr>
     <td><%= pun.content %></td>
     <td><%= pun.user_id %></td>
@@ -18,7 +18,19 @@
     <td><%= link_to 'Destroy', pun, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
-</table>
+</table> -->
+
+<% @puns.each do |pun| %>
+  <ul>
+    <li><%= pun.content %>
+    <span class="user"><%= pun.user_id %></span> --
+    <span class="crud>"<%= link_to 'Show', pun %>
+    <%= link_to 'Edit', edit_pun_path(pun) %>
+    <%= link_to 'Destroy', pun, confirm: 'Are you sure?', method: :delete %></span>
+  </ul>
+<% end %>
+
+
 
 <br />
 

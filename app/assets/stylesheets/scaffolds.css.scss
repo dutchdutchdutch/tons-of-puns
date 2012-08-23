@@ -6,11 +6,28 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
+p, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.3em;
 }
+
+h1 {
+color: #00C0F3;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 95px;
+font-weight: bold;
+height: 85px;
+letter-spacing: -5px;
+line-height: 85.5px;
+margin-bottom: 10px;
+margin-left: -6px;
+margin-right: 0px;
+margin-top: 30px;
+text-transform: uppercase;
+
+}
+
 
 pre {
   background-color: #eee;
@@ -21,11 +38,11 @@ pre {
 a {
   color: #000;
   &:visited {
-    color: #666;
+    color: #ccc;
   }
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #00C0F3;
   }
 }
 
@@ -62,8 +79,12 @@ div {
     background-color: #c00;
     color: #fff;
   }
-  ul li {
-    font-size: 12px;
-    list-style: square;
+
+li {
+    font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #ccc;
+	text-transform: uppercase;
   }
 }
