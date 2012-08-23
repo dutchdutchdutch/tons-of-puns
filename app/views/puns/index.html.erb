@@ -1,0 +1,25 @@
+<h1>Listing puns</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @puns.each do |pun| %>
+  <tr>
+    <td><%= pun.content %></td>
+    <td><%= pun.user_id %></td>
+    <td><%= link_to 'Show', pun %></td>
+    <td><%= link_to 'Edit', edit_pun_path(pun) %></td>
+    <td><%= link_to 'Destroy', pun, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pun', new_pun_path %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @pun.content %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @pun.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_pun_path(@pun) %> |
+<%= link_to 'Back', puns_path %>
